@@ -1,7 +1,8 @@
-from fastapi import FastAPI, Query, HTTPException
 from datetime import datetime, timedelta
-from typing import List, Optional
 from functools import lru_cache
+from typing import Optional
+
+from fastapi import FastAPI, HTTPException, Query
 from holidays import Australia
 
 app = FastAPI()
